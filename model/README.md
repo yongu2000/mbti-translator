@@ -7,7 +7,6 @@ MBTI 성격 유형별 텍스트 스타일 변환 모델
 ```
 model/
 ├── data/              # 데이터셋 저장
-├── notebooks/         # 실험 및 분석용 노트북
 ├── src/              # 소스 코드
 │   ├── preprocessing/ # 데이터 전처리
 │   ├── training/     # 모델 학습
