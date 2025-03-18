@@ -51,12 +51,13 @@ class MBTIStyleAnalyzer:
     def load_data(self):
         """데이터 로드 및 MBTI 유형별로 분류"""
         with open(self.data_path, 'r', encoding='utf-8') as f:
-            data = json.load(f)
+            self.mbti_data = json.load(f)
         
-        for item in data:
-            source_mbti = item['source_mbti'].upper()
-            text = item['source_text']
-            self.mbti_data[source_mbti].append(text)
+        # 데이터 통계 출력
+        print("\nMBTI 유형별 데이터 수:")
+        for mbti, texts in self.mbti_data.items():
+            print(f"{mbti}: {len(texts)}개의 텍스트")
+        print()
 
     def split_sentences(self, text: str) -> List[str]:
         """문장 분리 함수"""
@@ -239,6 +240,10 @@ def main():
     # 데이터 경로 설정
     data_path = "../data/processed/style_transfer_pairs_sampled.json"
     output_dir = "../data/processed/analysis_results"
+    
+    # 출력 디렉토리 생성
+    Path(output_dir).mkdir(parents=True, exist_ok=True)
+    print(f"Output directory created: {output_dir}")
     
     # 분석 실행
     analyzer = MBTIStyleAnalyzer(data_path)
