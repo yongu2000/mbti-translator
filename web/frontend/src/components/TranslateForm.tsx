@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from 'react';
 import { translateText } from '../api/translate';
 import { TranslateRequest } from '../types/translate';
