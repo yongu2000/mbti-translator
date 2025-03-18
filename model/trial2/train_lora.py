@@ -35,6 +35,7 @@ def train_lora(
     # 8비트 양자화 설정
     quantization_config = BitsAndBytesConfig(
         load_in_8bit=True,
+        llm_int8_enable_fp32_cpu_offload=True,
         llm_int8_threshold=6.0,
         llm_int8_has_fp16_weight=False
     )
