@@ -7,6 +7,13 @@ from config import Config
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
+# 프롬프트 템플릿 정의
+PROMPT_TEMPLATE = (
+    "### [MBTI: {mbti}]\n"
+    "사용자: {input}\n"
+    "AI ({mbti} 스타일):"
+)
+
 class MBTITester:
     def __init__(self, mbti_type: str = "ISTP"):
         self.mbti_type = mbti_type
@@ -42,23 +49,27 @@ class MBTITester:
             f"models/lora/{self.mbti_type.lower()}"
         )
         
-    def generate_response(self, input_text: str, max_length: int = 200) -> str:
+    def generate_response(self, input_text: str, max_new_tokens: int = 100) -> str:
         # 프롬프트 생성
-        prompt = f"""다음은 {self.mbti_type} 유형의 대화입니다.
-입력: {input_text}
-답변:"""
+        prompt = PROMPT_TEMPLATE.format(
+            mbti=self.mbti_type,
+            input=input_text
+        )
         
         # 입력 토크나이징
         inputs = self.tokenizer(prompt, return_tensors="pt").to(self.model.device)
         
         # 생성 설정
         generation_config = {
-            "max_length": max_length,
+            "max_new_tokens": max_new_tokens,
             "num_return_sequences": 1,
             "temperature": 0.7,
             "top_p": 0.9,
             "do_sample": True,
-            "pad_token_id": self.tokenizer.eos_token_id
+            "repetition_penalty": 1.2,
+            "length_penalty": 1.0,
+            "pad_token_id": self.tokenizer.eos_token_id,
+            "eos_token_id": self.tokenizer.eos_token_id
         }
         
         # 응답 생성

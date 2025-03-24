@@ -1,0 +1,22 @@
+INFO:__main__:모델 로딩 중: meta-llama/Llama-3.1-8B-Instruct
+INFO:accelerate.utils.modeling:We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+Loading checkpoint shards: 100%|████████████████████████████████████████████████| 4/4 [00:15<00:00,  3.97s/it]
+Map: 100%|█████████████████████████████████████████████████████████| 300/300 [00:00<00:00, 1140.86 examples/s]
+No label_names provided for model class `PeftModelForCausalLM`. Since `PeftModel` hides base models input arguments, if label_names is not given, label_names can't be set automatically within `Trainer`. Note that empty label_names list will be used instead.
+INFO:__main__:ISTP 학습 시작
+[34m[1mwandb[0m: [33mWARNING[0m The `run_name` is currently set to the same value as `TrainingArguments.output_dir`. If this was not intended, please specify a different run name by setting the `TrainingArguments.run_name` parameter.
+  0%|                                                                                  | 0/54 [00:00<?, ?it/s]`use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\torch\_dynamo\eval_frame.py:632: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+ 35%|█████████████████████████▋                                               | 19/54 [23:37<45:03, 77.26s/it]C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\torch\_dynamo\eval_frame.py:632: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+{'loss': 3.6552, 'grad_norm': 1.3369598388671875, 'learning_rate': 0.000188545602565321, 'epoch': 0.53}
+  return fn(*args, **kwargs)
+ 70%|███████████████████████████████████████████████████▎                     | 38/54 [49:50<20:31, 76.99s/it]C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\torch\_dynamo\eval_frame.py:632: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+{'loss': 2.8336, 'grad_norm': 1.0442404747009277, 'learning_rate': 0.00014647231720437686, 'epoch': 1.05}
+{'loss': 2.6671, 'grad_norm': 1.1069538593292236, 'learning_rate': 8.79463319744677e-05, 'epoch': 1.59}
+  return fn(*args, **kwargs)
+100%|███████████████████████████████████████████████████████████████████████| 54/54 [1:11:26<00:00, 79.38s/it]
+{'loss': 2.6714, 'grad_norm': 1.1508595943450928, 'learning_rate': 3.36877341759205e-05, 'epoch': 2.11}
+{'loss': 2.6229, 'grad_norm': 1.1728445291519165, 'learning_rate': 2.905818257394799e-06, 'epoch': 2.64}
+{'train_runtime': 4286.3727, 'train_samples_per_second': 0.21, 'train_steps_per_second': 0.013, 'train_loss': 2.861533765439634, 'epoch': 2.85}
+INFO:__main__:ISTP 학습 완료

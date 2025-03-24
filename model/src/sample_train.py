@@ -23,6 +23,13 @@ logger = logging.getLogger(__name__)
 # CUDA 캐시 초기화
 torch.cuda.empty_cache()
 
+# 프롬프트 템플릿 정의
+PROMPT_TEMPLATE = (
+    "### [MBTI: {mbti}]\n"
+    "사용자: {input}\n"
+    "AI ({mbti} 스타일): {output}"
+)
+
 class MBTITrainer:
     def __init__(self, mbti_type: str):
         self.mbti_type = mbti_type
@@ -81,15 +88,10 @@ class MBTITrainer:
         )
         
     def _preprocess_function(self, examples):
-        # 프롬프트 템플릿
-        prompt_template = """다음은 {mbti} 유형의 대화입니다.
-                            입력: {input}
-                            답변: {output}"""
-        
         # 데이터 전처리
         texts = []
         for input_text, output_text in zip(examples["input"], examples["output"]):
-            text = prompt_template.format(
+            text = PROMPT_TEMPLATE.format(
                 mbti=self.mbti_type,
                 input=input_text,
                 output=output_text
@@ -103,6 +105,9 @@ class MBTITrainer:
             max_length=Config.MAX_LENGTH,
             padding="max_length"
         )
+        
+        # labels 설정 (다음 토큰 예측을 위한 타겟)
+        tokenized["labels"] = tokenized["input_ids"].copy()
         
         return tokenized
         
