@@ -1,0 +1,19 @@
+INFO:__main__:모델 로딩 중: meta-llama/Llama-3.1-8B-Instruct
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\Personal\code\mbti-translator\model\src\sample_train.py", line 168, in <module>
+    main()
+  File "C:\Users\USER\Desktop\Personal\code\mbti-translator\model\src\sample_train.py", line 159, in main
+    trainer = MBTITrainer(mbti_type)
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\Personal\code\mbti-translator\model\src\sample_train.py", line 41, in __init__
+    self.model = AutoModelForCausalLM.from_pretrained(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\transformers\models\auto\auto_factory.py", line 573, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\transformers\modeling_utils.py", line 272, in _wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\transformers\modeling_utils.py", line 4210, in from_pretrained
+    raise ValueError(
+ValueError: You can't pass `load_in_4bit`or `load_in_8bit` as a kwarg when passing `quantization_config` argument at the same time.

@@ -1,0 +1,15 @@
+{"time":"2025-03-25T02:29:58.5434763+09:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"C:\\Users\\USER\\Desktop\\Personal\\code\\mbti-translator\\model\\wandb\\run-20250325_022958-1mwfmz6n\\logs\\debug-core.log"}
+{"time":"2025-03-25T02:29:58.7711859+09:00","level":"INFO","msg":"created new stream","id":"1mwfmz6n"}
+{"time":"2025-03-25T02:29:58.7717063+09:00","level":"INFO","msg":"stream: started","id":"1mwfmz6n"}
+{"time":"2025-03-25T02:29:58.7717063+09:00","level":"INFO","msg":"writer: Do: started","stream_id":"1mwfmz6n"}
+{"time":"2025-03-25T02:29:58.7717063+09:00","level":"INFO","msg":"handler: started","stream_id":"1mwfmz6n"}
+{"time":"2025-03-25T02:29:58.7717063+09:00","level":"INFO","msg":"sender: started","stream_id":"1mwfmz6n"}
+{"time":"2025-03-25T02:29:59.2424914+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-25T02:35:55.8293835+09:00","level":"INFO","msg":"stream: closing","id":"1mwfmz6n"}
+{"time":"2025-03-25T02:35:55.8299002+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-25T02:35:55.8325005+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-25T02:35:56.6444029+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-25T02:35:56.9058361+09:00","level":"INFO","msg":"handler: closed","stream_id":"1mwfmz6n"}
+{"time":"2025-03-25T02:35:56.9058361+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":"1mwfmz6n"}
+{"time":"2025-03-25T02:35:56.9064182+09:00","level":"INFO","msg":"sender: closed","stream_id":"1mwfmz6n"}
+{"time":"2025-03-25T02:35:56.9070138+09:00","level":"INFO","msg":"stream: closed","id":"1mwfmz6n"}

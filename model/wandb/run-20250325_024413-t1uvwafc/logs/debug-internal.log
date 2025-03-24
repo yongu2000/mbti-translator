@@ -1,0 +1,18 @@
+{"time":"2025-03-25T02:44:13.3177871+09:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"C:\\Users\\USER\\Desktop\\Personal\\code\\mbti-translator\\model\\wandb\\run-20250325_024413-t1uvwafc\\logs\\debug-core.log"}
+{"time":"2025-03-25T02:44:13.4400244+09:00","level":"INFO","msg":"created new stream","id":"t1uvwafc"}
+{"time":"2025-03-25T02:44:13.4400244+09:00","level":"INFO","msg":"stream: started","id":"t1uvwafc"}
+{"time":"2025-03-25T02:44:13.4410247+09:00","level":"INFO","msg":"handler: started","stream_id":"t1uvwafc"}
+{"time":"2025-03-25T02:44:13.4410247+09:00","level":"INFO","msg":"writer: Do: started","stream_id":"t1uvwafc"}
+{"time":"2025-03-25T02:44:13.4418559+09:00","level":"INFO","msg":"sender: started","stream_id":"t1uvwafc"}
+{"time":"2025-03-25T02:44:13.8710027+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-25T03:27:49.2030833+09:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-03-25T03:29:51.9359637+09:00","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/yongu2000-none/mbti-translator/t1uvwafc/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2025-03-25T03:58:13.6579767+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-25T03:58:13.6613479+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-25T03:58:14.5263685+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-25T03:58:14.6743364+09:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading console lines 21-22","runtime_seconds":0.1479679}],"total_operations":1}}
+{"time":"2025-03-25T03:58:14.8758985+09:00","level":"INFO","msg":"stream: closing","id":"t1uvwafc"}
+{"time":"2025-03-25T03:58:14.8758985+09:00","level":"INFO","msg":"handler: closed","stream_id":"t1uvwafc"}
+{"time":"2025-03-25T03:58:14.8758985+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":"t1uvwafc"}
+{"time":"2025-03-25T03:58:14.8758985+09:00","level":"INFO","msg":"sender: closed","stream_id":"t1uvwafc"}
+{"time":"2025-03-25T03:58:14.8758985+09:00","level":"INFO","msg":"stream: closed","id":"t1uvwafc"}
