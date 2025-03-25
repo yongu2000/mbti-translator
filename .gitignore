@@ -1,1 +1,5 @@
 model/mbti_env
+model/.env
+model/models
+model/model
+model/checkpoints

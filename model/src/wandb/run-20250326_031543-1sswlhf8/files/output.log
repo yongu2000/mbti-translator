@@ -1,0 +1,29 @@
+  0%|                                                                                           | 0/110 [00:00<?, ?it/s]C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\torch\_dynamo\eval_frame.py:632: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+ 11%|████████▉                                                                         | 12/110 [01:38<12:10,  7.45s/it]Traceback (most recent call last):
+{'loss': 3.7211, 'grad_norm': 2.7317535877227783, 'learning_rate': 0.00016363636363636366, 'epoch': 0.87}
+  File "C:\Users\USER\Desktop\Personal\code\mbti-translator\model\src\peft_lora\train_istp_lora.py", line 231, in <module>
+    train_istp_lora()
+  File "C:\Users\USER\Desktop\Personal\code\mbti-translator\model\src\peft_lora\train_istp_lora.py", line 204, in train_istp_lora
+    trainer.train()
+  File "C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\transformers\trainer.py", line 2245, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\transformers\trainer.py", line 2647, in _inner_training_loop
+    self._maybe_log_save_evaluate(tr_loss, grad_norm, model, trial, epoch, ignore_keys_for_eval, start_time)
+  File "C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\transformers\trainer.py", line 3093, in _maybe_log_save_evaluate
+    metrics = self._evaluate(trial, ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\transformers\trainer.py", line 3047, in _evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\transformers\trainer.py", line 4136, in evaluate
+    output = eval_loop(
+             ^^^^^^^^^^
+  File "C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\transformers\trainer.py", line 4425, in evaluation_loop
+    metrics = self.compute_metrics(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\Personal\code\mbti-translator\model\src\peft_lora\train_istp_lora.py", line 200, in <lambda>
+    compute_metrics=lambda eval_pred: {"perplexity": torch.exp(torch.tensor(eval_pred.loss))}  # perplexity 계산
+                                                                            ^^^^^^^^^^^^^^
+AttributeError: 'EvalPrediction' object has no attribute 'loss'

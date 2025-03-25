@@ -1,0 +1,42 @@
+{
+  "os":  "Windows-10-10.0.26100-SP0",
+  "python":  "CPython 3.11.9",
+  "startedAt":  "2025-03-25T17:22:15.174471Z",
+  "program":  "C:\\Users\\USER\\Desktop\\Personal\\code\\mbti-translator\\model\\src\\peft_lora\\train_istp_lora.py",
+  "codePath":  "model\\src\\peft_lora\\train_istp_lora.py",
+  "git":  {
+    "remote":  "https://github.com/yongu2000/mbti-translator.git",
+    "commit":  "cee86a889bccc7294ec24924e34fa6d60264eb5e"
+  },
+  "email":  "yongu2000@naver.com",
+  "root":  "C:\\Users\\USER\\Desktop\\Personal\\code\\mbti-translator\\model\\src",
+  "host":  "DESKTOP-R2SMLEI",
+  "executable":  "C:\\Users\\USER\\Desktop\\Personal\\code\\mbti-translator\\model\\mbti_env\\Scripts\\python.exe",
+  "codePathLocal":  "peft_lora\\train_istp_lora.py",
+  "cpu_count":  6,
+  "cpu_count_logical":  12,
+  "gpu":  "NVIDIA GeForce RTX 4060 Ti",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "1023253590016",
+      "used":  "692886355968"
+    }
+  },
+  "memory":  {
+    "total":  "33948598272"
+  },
+  "cpu":  {
+    "count":  6,
+    "countLogical":  12
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA GeForce RTX 4060 Ti",
+      "memoryTotal":  "8585740288",
+      "cudaCores":  4352,
+      "architecture":  "Ada"
+    }
+  ],
+  "cudaVersion":  "12.6"
+}

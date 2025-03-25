@@ -1,0 +1,5 @@
+100%|███████████████████████████████████████████████████████████████████████████████████| 18/18 [00:05<00:00,  3.65it/s]You passed along `num_labels=3` with an incompatible id to label map: {'0': 'NEGATIVE', '1': 'POSITIVE'}. The number of labels will be overwritten to 2.
+100%|███████████████████████████████████████████████████████████████████████████████████| 18/18 [00:05<00:00,  3.28it/s]
+{'train_runtime': 7.3509, 'train_samples_per_second': 83.256, 'train_steps_per_second': 2.449, 'train_loss': 8.908747355143229, 'epoch': 2.62}
+You passed along `num_labels=3` with an incompatible id to label map: {'0': 'NEGATIVE', '1': 'POSITIVE'}. The number of labels will be overwritten to 2.
+Completed training for ISTP

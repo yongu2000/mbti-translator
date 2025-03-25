@@ -1,0 +1,15 @@
+{"time":"2025-03-26T03:25:40.8428454+09:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"C:\\Users\\USER\\Desktop\\Personal\\code\\mbti-translator\\model\\src\\wandb\\run-20250326_032540-tco59ym6\\logs\\debug-core.log"}
+{"time":"2025-03-26T03:25:40.960264+09:00","level":"INFO","msg":"created new stream","id":"tco59ym6"}
+{"time":"2025-03-26T03:25:40.960264+09:00","level":"INFO","msg":"stream: started","id":"tco59ym6"}
+{"time":"2025-03-26T03:25:40.960264+09:00","level":"INFO","msg":"handler: started","stream_id":"tco59ym6"}
+{"time":"2025-03-26T03:25:40.960264+09:00","level":"INFO","msg":"sender: started","stream_id":"tco59ym6"}
+{"time":"2025-03-26T03:25:40.960264+09:00","level":"INFO","msg":"writer: Do: started","stream_id":"tco59ym6"}
+{"time":"2025-03-26T03:25:41.3601406+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-26T03:41:37.292803+09:00","level":"INFO","msg":"stream: closing","id":"tco59ym6"}
+{"time":"2025-03-26T03:41:37.292803+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-26T03:41:37.2933076+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-26T03:41:38.0568812+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-26T03:41:38.5616414+09:00","level":"INFO","msg":"sender: closed","stream_id":"tco59ym6"}
+{"time":"2025-03-26T03:41:38.5616414+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":"tco59ym6"}
+{"time":"2025-03-26T03:41:38.5616414+09:00","level":"INFO","msg":"handler: closed","stream_id":"tco59ym6"}
+{"time":"2025-03-26T03:41:38.5621466+09:00","level":"INFO","msg":"stream: closed","id":"tco59ym6"}

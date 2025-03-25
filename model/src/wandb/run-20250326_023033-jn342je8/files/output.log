@@ -1,0 +1,12 @@
+  0%|                                                                                            | 0/36 [00:00<?, ?it/s]C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\torch\_dynamo\eval_frame.py:632: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+ 36%|█████████████████████████████▉                                                     | 13/36 [01:03<01:44,  4.56s/it]C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\torch\_dynamo\eval_frame.py:632: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+{'loss': 3.3647, 'grad_norm': 2.947962522506714, 'learning_rate': 0.00017980172272802396, 'epoch': 0.78}
+  return fn(*args, **kwargs)
+ 72%|███████████████████████████████████████████████████████████▉                       | 26/36 [02:08<00:49,  4.93s/it]C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\torch\_dynamo\eval_frame.py:632: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+{'loss': 2.2339, 'grad_norm': 1.5734291076660156, 'learning_rate': 0.0001, 'epoch': 1.55}
+  return fn(*args, **kwargs)
+100%|███████████████████████████████████████████████████████████████████████████████████| 36/36 [03:05<00:00,  5.16s/it]
+{'loss': 2.1544, 'grad_norm': 1.5383555889129639, 'learning_rate': 2.0198277271976052e-05, 'epoch': 2.31}
+{'train_runtime': 190.2868, 'train_samples_per_second': 3.216, 'train_steps_per_second': 0.189, 'train_loss': 2.510961982938978, 'epoch': 2.78}
+Completed training for ISTP

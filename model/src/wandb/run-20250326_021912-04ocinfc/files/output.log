@@ -1,0 +1,51 @@
+  0%|                                                                                            | 0/36 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\transformers\tokenization_utils_base.py", line 777, in convert_to_tensors
+    tensor = as_tensor(value)
+             ^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\transformers\tokenization_utils_base.py", line 739, in as_tensor
+    return torch.tensor(value)
+           ^^^^^^^^^^^^^^^^^^^
+ValueError: too many dimensions 'str'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\Personal\code\mbti-translator\model\src\peft_lora\train_istp_lora.py", line 145, in <module>
+    train_istp_lora()
+  File "C:\Users\USER\Desktop\Personal\code\mbti-translator\model\src\peft_lora\train_istp_lora.py", line 131, in train_istp_lora
+    trainer.train()
+  File "C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\transformers\trainer.py", line 2245, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\transformers\trainer.py", line 2508, in _inner_training_loop
+    batch_samples, num_items_in_batch = self.get_batch_samples(epoch_iterator, num_batches, args.device)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\transformers\trainer.py", line 5224, in get_batch_samples
+    batch_samples += [next(epoch_iterator)]
+                      ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\accelerate\data_loader.py", line 566, in __iter__
+    current_batch = next(dataloader_iter)
+                    ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\torch\utils\data\dataloader.py", line 701, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\torch\utils\data\dataloader.py", line 757, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\torch\utils\data\_utils\fetch.py", line 55, in fetch
+    return self.collate_fn(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\transformers\data\data_collator.py", line 683, in __call__
+    batch = pad_without_fast_tokenizer_warning(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\transformers\data\data_collator.py", line 67, in pad_without_fast_tokenizer_warning
+    padded = tokenizer.pad(*pad_args, **pad_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\transformers\tokenization_utils_base.py", line 3407, in pad
+    return BatchEncoding(batch_outputs, tensor_type=return_tensors)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\transformers\tokenization_utils_base.py", line 241, in __init__
+    self.convert_to_tensors(tensor_type=tensor_type, prepend_batch_axis=prepend_batch_axis)
+  File "C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\transformers\tokenization_utils_base.py", line 793, in convert_to_tensors
+    raise ValueError(
+ValueError: Unable to create tensor, you should probably activate truncation and/or padding with 'padding=True' 'truncation=True' to have batched tensors with the same length. Perhaps your features (`input_text` in this case) have excessive nesting (inputs type `list` where type `int` is expected).
