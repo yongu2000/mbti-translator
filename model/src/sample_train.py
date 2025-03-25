@@ -26,8 +26,8 @@ torch.cuda.empty_cache()
 # 프롬프트 템플릿 정의
 PROMPT_TEMPLATE = (
     "### [MBTI: {mbti}]\n"
-    "사용자: {input}\n"
-    "AI ({mbti} 스타일): {output}"
+    "다음 문장을 {mbti} 스타일로 말해보세요:\n"
+    "{output}"
 )
 
 class MBTITrainer:
@@ -76,7 +76,7 @@ class MBTITrainer:
         # 데이터셋 로드 (샘플링된 데이터)
         self.dataset = load_dataset(
             "json",
-            data_files=f"data/sampled/{self.mbti_type.lower()}_conversations.jsonl"
+            data_files=f"data/sampled_style/{self.mbti_type.lower()}_conversations.jsonl"
         )
         
         # 데이터 전처리
@@ -90,10 +90,9 @@ class MBTITrainer:
     def _preprocess_function(self, examples):
         # 데이터 전처리
         texts = []
-        for input_text, output_text in zip(examples["input"], examples["output"]):
+        for output_text in examples["output"]:
             text = PROMPT_TEMPLATE.format(
                 mbti=self.mbti_type,
-                input=input_text,
                 output=output_text
             )
             texts.append(text)
@@ -114,7 +113,7 @@ class MBTITrainer:
     def train(self):
         # 학습 설정
         training_args = TrainingArguments(
-            output_dir=f"models/lora/{self.mbti_type.lower()}",
+            output_dir=f"models/lora_style/{self.mbti_type.lower()}",
             num_train_epochs=Config.NUM_EPOCHS,
             per_device_train_batch_size=Config.BATCH_SIZE,
             gradient_accumulation_steps=4,

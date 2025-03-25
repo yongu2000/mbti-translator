@@ -1,0 +1,10 @@
+  0%|                                                                             | 0/54 [00:00<?, ?it/s]C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\torch\_dynamo\eval_frame.py:632: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+100%|████████████████████████████████████████████████████████████████████| 54/54 [06:04<00:00,  6.76s/it]
+{'loss': 5.7595, 'grad_norm': 6.5617289543151855, 'learning_rate': 1e-05, 'epoch': 0.53}
+{'loss': 5.5833, 'grad_norm': 7.7937726974487305, 'learning_rate': 3e-05, 'epoch': 1.05}
+{'loss': 5.2773, 'grad_norm': 7.123870372772217, 'learning_rate': 5e-05, 'epoch': 1.59}
+{'loss': 4.8164, 'grad_norm': 9.86694049835205, 'learning_rate': 7e-05, 'epoch': 2.11}
+{'loss': 4.364, 'grad_norm': 9.014408111572266, 'learning_rate': 9e-05, 'epoch': 2.64}
+{'train_runtime': 370.175, 'train_samples_per_second': 2.431, 'train_steps_per_second': 0.146, 'train_loss': 5.086281705785681, 'epoch': 2.85}
+INFO:__main__:학습 완료: models/lora_style/istp

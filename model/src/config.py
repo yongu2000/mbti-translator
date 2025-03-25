@@ -6,13 +6,8 @@ load_dotenv()
 
 class Config:
     # 모델 설정
-    BASE_MODEL = "meta-llama/Llama-3.1-8B-Instruct"  # 실제 모델명으로 변경 필요
+    BASE_MODEL = "heegyu/kobart-text-style-transfer"  # 실제 모델명으로 변경 필요
     HF_TOKEN = os.getenv('HF_TOKEN')  # .env 파일에서 HF_TOKEN 환경변수 로드
-    
-    # LoRA 설정
-    LORA_R = 8
-    LORA_ALPHA = 16
-    LORA_DROPOUT = 0.05
     
     # 학습 설정
     BATCH_SIZE = 4
@@ -29,5 +24,4 @@ class Config:
     ]
     
     # 경로 설정
-    LORA_WEIGHTS_PATH = "models/lora/"
     DATA_PATH = "data/processed/" 

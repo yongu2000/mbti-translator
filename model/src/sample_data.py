@@ -32,19 +32,24 @@ def sample_top_conversations(input_file: str, output_file: str, top_n: int = 300
 
 def main():
     # 입력/출력 디렉토리 설정
-    input_dir = Path("data/processed")
-    output_dir = Path("data/sampled")
-    output_dir.mkdir(exist_ok=True)
+    input_dir = Path("data/processed_style")
+    output_dir = Path("data/sampled_style")
+    output_dir.mkdir(parents=True, exist_ok=True)
     
-    # 각 MBTI 파일 처리
-    for mbti in Config.MBTI_TYPES:
+    # MBTI 유형 목록
+    mbti_types = [
+        "ENFJ", "ENTJ", "ESFJ", "ESFP",
+        "ESTJ", "ESTP", "ISFJ", "ISTJ"
+    ]
+    
+    # 각 MBTI 유형별로 처리
+    for mbti in mbti_types:
         input_file = input_dir / f"{mbti.lower()}_conversations.jsonl"
-        output_file = output_dir / f"{mbti.lower()}_conversations.jsonl"
-        
-        if input_file.exists():
-            sample_top_conversations(str(input_file), str(output_file))
-        else:
-            logger.warning(f"{input_file} 파일을 찾을 수 없습니다.")
+        if not input_file.exists():
+            logger.warning(f"파일을 찾을 수 없습니다: {input_file}")
+            continue
+            
+        sample_top_conversations(input_file, output_dir)
 
 if __name__ == "__main__":
     main() 
