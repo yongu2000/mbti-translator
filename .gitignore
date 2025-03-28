@@ -3,3 +3,5 @@ model/.env
 model/models
 model/model
 model/checkpoints
+model/mbti-style-transfer-model
+model/lora

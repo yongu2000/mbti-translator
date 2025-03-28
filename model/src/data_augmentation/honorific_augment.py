@@ -115,8 +115,8 @@ if __name__ == "__main__":
     project_root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
     
     # 입력/출력 파일 경로 설정
-    input_file = os.path.join(project_root, "model", "data", "gpt_produced", "honor_needed.jsonl")
-    output_file = os.path.join(project_root, "model", "data", "gpt_produced", "honor_needed_augmented.jsonl")
+    input_file = os.path.join(project_root, "model", "data", "gpt_produced", "mbti_common_typeB.jsonl")
+    output_file = os.path.join(project_root, "model", "data", "gpt_produced", "mbti_common_typeB_augmented.jsonl")
     
     print(f"입력 파일 경로: {input_file}")
     print(f"출력 파일 경로: {output_file}")

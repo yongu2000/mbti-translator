@@ -1,0 +1,379 @@
+  0%|                                                                                                                         | 0/26525 [00:00<?, ?it/s]C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\transformers\tokenization_utils_base.py:3980: UserWarning: `as_target_tokenizer` is deprecated and will be removed in v5 of Transformers. You can tokenize your labels by using the argument `text_target` of the regular `__call__` method (either in the same call as your input texts if you use the same keyword arguments, or in a separate call.
+  warnings.warn(
+C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\transformers\data\data_collator.py:741: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\builder\windows\pytorch\torch\csrc\utils\tensor_new.cpp:281.)
+  batch["labels"] = torch.tensor(batch["labels"], dtype=torch.int64)
+  4%|████                                                                                                        | 1000/26525 [05:12<1:43:49,  4.10it/s]C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\transformers\modeling_utils.py:3353: UserWarning: Moving the following attributes in the config to the generation config: {'forced_eos_token_id': 1}. You are seeing this warning because you've set generation parameters in the model config, as opposed to in the generation config.
+{'loss': 5.3244, 'grad_norm': 11.220549583435059, 'learning_rate': 6.466666666666667e-06, 'epoch': 0.02}
+{'loss': 2.2636, 'grad_norm': 10.708379745483398, 'learning_rate': 1.3133333333333334e-05, 'epoch': 0.04}
+{'loss': 1.6136, 'grad_norm': 8.44581127166748, 'learning_rate': 1.98e-05, 'epoch': 0.06}
+{'loss': 1.2713, 'grad_norm': 7.709680557250977, 'learning_rate': 1.992602478551001e-05, 'epoch': 0.08}
+{'loss': 1.0244, 'grad_norm': 6.999237060546875, 'learning_rate': 1.984976167778837e-05, 'epoch': 0.09}
+  warnings.warn(                                                                                                                                        
+{'eval_loss': 0.7501255869865417, 'eval_runtime': 31.8351, 'eval_samples_per_second': 593.057, 'eval_steps_per_second': 74.132, 'epoch': 0.09}
+{'loss': 0.8937, 'grad_norm': 6.0621538162231445, 'learning_rate': 1.977349857006673e-05, 'epoch': 0.11}
+{'loss': 0.8559, 'grad_norm': 4.970367908477783, 'learning_rate': 1.969723546234509e-05, 'epoch': 0.13}
+{'loss': 0.7652, 'grad_norm': 4.850748062133789, 'learning_rate': 1.9620972354623453e-05, 'epoch': 0.15}
+{'loss': 0.7157, 'grad_norm': 3.855919599533081, 'learning_rate': 1.954470924690181e-05, 'epoch': 0.17}
+{'loss': 0.6783, 'grad_norm': 5.605593204498291, 'learning_rate': 1.9468446139180172e-05, 'epoch': 0.19}
+{'eval_loss': 0.5374761819839478, 'eval_runtime': 31.6399, 'eval_samples_per_second': 596.715, 'eval_steps_per_second': 74.589, 'epoch': 0.19}
+C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\transformers\tokenization_utils_base.py:3980: UserWarning: `as_target_tokenizer` is deprecated and will be removed in v5 of Transformers. You can tokenize your labels by using the argument `text_target` of the regular `__call__` method (either in the same call as your input texts if you use the same keyword arguments, or in a separate call.
+  warnings.warn(
+  8%|████████▏                                                                                                   | 2000/26525 [10:17<1:37:50,  4.18it/s]C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\transformers\tokenization_utils_base.py:3980: UserWarning: `as_target_tokenizer` is deprecated and will be removed in v5 of Transformers. You can tokenize your labels by using the argument `text_target` of the regular `__call__` method (either in the same call as your input texts if you use the same keyword arguments, or in a separate call.
+{'loss': 0.6318, 'grad_norm': 3.6525192260742188, 'learning_rate': 1.9392183031458533e-05, 'epoch': 0.21}
+{'loss': 0.6316, 'grad_norm': 6.0688300132751465, 'learning_rate': 1.9315919923736894e-05, 'epoch': 0.23}
+{'loss': 0.5975, 'grad_norm': 4.214187145233154, 'learning_rate': 1.9239656816015256e-05, 'epoch': 0.25}
+{'loss': 0.5808, 'grad_norm': 3.5533576011657715, 'learning_rate': 1.9163393708293614e-05, 'epoch': 0.26}
+{'loss': 0.5556, 'grad_norm': 3.7221007347106934, 'learning_rate': 1.9087130600571975e-05, 'epoch': 0.28}
+  warnings.warn(                                                                                                                                        
+{'eval_loss': 0.4762071371078491, 'eval_runtime': 31.2931, 'eval_samples_per_second': 603.328, 'eval_steps_per_second': 75.416, 'epoch': 0.28}
+{'loss': 0.5589, 'grad_norm': 3.818974494934082, 'learning_rate': 1.9010867492850336e-05, 'epoch': 0.3}
+{'loss': 0.522, 'grad_norm': 3.054746389389038, 'learning_rate': 1.8934604385128697e-05, 'epoch': 0.32}
+{'loss': 0.5221, 'grad_norm': 4.267084121704102, 'learning_rate': 1.8858341277407055e-05, 'epoch': 0.34}
+{'loss': 0.4975, 'grad_norm': 3.7715795040130615, 'learning_rate': 1.8782078169685417e-05, 'epoch': 0.36}
+{'loss': 0.4719, 'grad_norm': 3.447770357131958, 'learning_rate': 1.8705815061963778e-05, 'epoch': 0.38}
+{'eval_loss': 0.4416305422782898, 'eval_runtime': 30.8161, 'eval_samples_per_second': 612.667, 'eval_steps_per_second': 76.583, 'epoch': 0.38}
+ 11%|████████████▏                                                                                               | 3000/26525 [15:14<1:30:05,  4.35it/s]C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\transformers\tokenization_utils_base.py:3980: UserWarning: `as_target_tokenizer` is deprecated and will be removed in v5 of Transformers. You can tokenize your labels by using the argument `text_target` of the regular `__call__` method (either in the same call as your input texts if you use the same keyword arguments, or in a separate call.
+{'loss': 0.4556, 'grad_norm': 3.6515274047851562, 'learning_rate': 1.862955195424214e-05, 'epoch': 0.4}
+{'loss': 0.4664, 'grad_norm': 3.6256728172302246, 'learning_rate': 1.8553288846520497e-05, 'epoch': 0.41}
+{'loss': 0.433, 'grad_norm': 3.3534202575683594, 'learning_rate': 1.8477025738798858e-05, 'epoch': 0.43}
+{'loss': 0.4408, 'grad_norm': 4.481220245361328, 'learning_rate': 1.840076263107722e-05, 'epoch': 0.45}
+{'loss': 0.4347, 'grad_norm': 3.4209980964660645, 'learning_rate': 1.8324499523355577e-05, 'epoch': 0.47}
+  warnings.warn(                                                                                                                                        
+{'eval_loss': 0.41074010729789734, 'eval_runtime': 30.2107, 'eval_samples_per_second': 624.943, 'eval_steps_per_second': 78.118, 'epoch': 0.47}
+{'loss': 0.4174, 'grad_norm': 3.4690253734588623, 'learning_rate': 1.824823641563394e-05, 'epoch': 0.49}
+{'loss': 0.3862, 'grad_norm': 3.4311985969543457, 'learning_rate': 1.81719733079123e-05, 'epoch': 0.51}
+{'loss': 0.4055, 'grad_norm': 3.130619764328003, 'learning_rate': 1.8095710200190658e-05, 'epoch': 0.53}
+{'loss': 0.3923, 'grad_norm': 3.792854070663452, 'learning_rate': 1.801944709246902e-05, 'epoch': 0.55}
+{'loss': 0.3948, 'grad_norm': 3.655341863632202, 'learning_rate': 1.7943946615824596e-05, 'epoch': 0.57}
+{'eval_loss': 0.39998599886894226, 'eval_runtime': 28.2883, 'eval_samples_per_second': 667.414, 'eval_steps_per_second': 83.427, 'epoch': 0.57}
+ 15%|████████████████▎                                                                                           | 4000/26525 [20:17<1:33:36,  4.01it/s]C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\transformers\tokenization_utils_base.py:3980: UserWarning: `as_target_tokenizer` is deprecated and will be removed in v5 of Transformers. You can tokenize your labels by using the argument `text_target` of the regular `__call__` method (either in the same call as your input texts if you use the same keyword arguments, or in a separate call.
+{'loss': 0.3732, 'grad_norm': 4.009441375732422, 'learning_rate': 1.7867683508102958e-05, 'epoch': 0.58}
+{'loss': 0.3846, 'grad_norm': 3.5090267658233643, 'learning_rate': 1.7791420400381316e-05, 'epoch': 0.6}
+{'loss': 0.3717, 'grad_norm': 3.883432149887085, 'learning_rate': 1.7715157292659677e-05, 'epoch': 0.62}
+{'loss': 0.3633, 'grad_norm': 3.7946434020996094, 'learning_rate': 1.7638894184938038e-05, 'epoch': 0.64}
+{'loss': 0.3497, 'grad_norm': 3.3921492099761963, 'learning_rate': 1.75626310772164e-05, 'epoch': 0.66}
+  warnings.warn(                                                                                                                                        
+{'eval_loss': 0.3797709345817566, 'eval_runtime': 30.9463, 'eval_samples_per_second': 610.09, 'eval_steps_per_second': 76.261, 'epoch': 0.66}
+{'loss': 0.34, 'grad_norm': 4.027513027191162, 'learning_rate': 1.7486367969494757e-05, 'epoch': 0.68}
+{'loss': 0.3559, 'grad_norm': 3.101792573928833, 'learning_rate': 1.741010486177312e-05, 'epoch': 0.7}
+{'loss': 0.3336, 'grad_norm': 2.3367557525634766, 'learning_rate': 1.733384175405148e-05, 'epoch': 0.72}
+{'loss': 0.3333, 'grad_norm': 3.0030765533447266, 'learning_rate': 1.725757864632984e-05, 'epoch': 0.74}
+{'loss': 0.3201, 'grad_norm': 3.470144033432007, 'learning_rate': 1.71813155386082e-05, 'epoch': 0.75}
+{'eval_loss': 0.3607403635978699, 'eval_runtime': 29.733, 'eval_samples_per_second': 634.984, 'eval_steps_per_second': 79.373, 'epoch': 0.75}
+ 19%|████████████████████▎                                                                                       | 5000/26525 [25:11<1:24:40,  4.24it/s]C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\transformers\tokenization_utils_base.py:3980: UserWarning: `as_target_tokenizer` is deprecated and will be removed in v5 of Transformers. You can tokenize your labels by using the argument `text_target` of the regular `__call__` method (either in the same call as your input texts if you use the same keyword arguments, or in a separate call.
+{'loss': 0.3094, 'grad_norm': 3.6815526485443115, 'learning_rate': 1.710505243088656e-05, 'epoch': 0.77}
+{'loss': 0.3101, 'grad_norm': 3.1030147075653076, 'learning_rate': 1.702878932316492e-05, 'epoch': 0.79}
+{'loss': 0.3072, 'grad_norm': 5.01955509185791, 'learning_rate': 1.6952526215443283e-05, 'epoch': 0.81}
+{'loss': 0.3066, 'grad_norm': 2.325880527496338, 'learning_rate': 1.687626310772164e-05, 'epoch': 0.83}
+{'loss': 0.313, 'grad_norm': 4.311936378479004, 'learning_rate': 1.6800000000000002e-05, 'epoch': 0.85}
+  warnings.warn(                                                                                                                                        
+{'eval_loss': 0.3439289331436157, 'eval_runtime': 29.9568, 'eval_samples_per_second': 630.24, 'eval_steps_per_second': 78.78, 'epoch': 0.85}
+{'loss': 0.2915, 'grad_norm': 3.083561897277832, 'learning_rate': 1.6723736892278363e-05, 'epoch': 0.87}
+{'loss': 0.3013, 'grad_norm': 3.32201886177063, 'learning_rate': 1.664747378455672e-05, 'epoch': 0.89}
+{'loss': 0.2832, 'grad_norm': 4.05745792388916, 'learning_rate': 1.6571210676835082e-05, 'epoch': 0.9}
+{'loss': 0.2698, 'grad_norm': 3.1321520805358887, 'learning_rate': 1.6494947569113443e-05, 'epoch': 0.92}
+{'loss': 0.2703, 'grad_norm': 2.945620059967041, 'learning_rate': 1.64186844613918e-05, 'epoch': 0.94}
+{'eval_loss': 0.34123533964157104, 'eval_runtime': 28.3341, 'eval_samples_per_second': 666.335, 'eval_steps_per_second': 83.292, 'epoch': 0.94}
+ 23%|████████████████████████▍                                                                                   | 6000/26525 [30:07<1:20:29,  4.25it/s]C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\transformers\tokenization_utils_base.py:3980: UserWarning: `as_target_tokenizer` is deprecated and will be removed in v5 of Transformers. You can tokenize your labels by using the argument `text_target` of the regular `__call__` method (either in the same call as your input texts if you use the same keyword arguments, or in a separate call.
+{'loss': 0.271, 'grad_norm': 2.349515676498413, 'learning_rate': 1.6342421353670163e-05, 'epoch': 0.96}
+{'loss': 0.2642, 'grad_norm': 2.528440237045288, 'learning_rate': 1.6266158245948524e-05, 'epoch': 0.98}
+{'loss': 0.283, 'grad_norm': 3.056997299194336, 'learning_rate': 1.6189895138226882e-05, 'epoch': 1.0}
+{'loss': 0.2177, 'grad_norm': 3.1282849311828613, 'learning_rate': 1.6113632030505243e-05, 'epoch': 1.02}
+{'loss': 0.2247, 'grad_norm': 3.551032781600952, 'learning_rate': 1.6037368922783604e-05, 'epoch': 1.04}
+  warnings.warn(                                                                                                                                        
+{'eval_loss': 0.33144354820251465, 'eval_runtime': 28.5074, 'eval_samples_per_second': 662.283, 'eval_steps_per_second': 82.785, 'epoch': 1.04}
+{'loss': 0.2307, 'grad_norm': 4.158328533172607, 'learning_rate': 1.5961105815061966e-05, 'epoch': 1.06}
+{'loss': 0.227, 'grad_norm': 2.0151734352111816, 'learning_rate': 1.5884842707340323e-05, 'epoch': 1.07}
+{'loss': 0.2244, 'grad_norm': 3.051147699356079, 'learning_rate': 1.5808579599618685e-05, 'epoch': 1.09}
+{'loss': 0.2164, 'grad_norm': 2.728667974472046, 'learning_rate': 1.5732316491897046e-05, 'epoch': 1.11}
+{'loss': 0.2157, 'grad_norm': 2.7623729705810547, 'learning_rate': 1.5656053384175407e-05, 'epoch': 1.13}
+{'eval_loss': 0.32705193758010864, 'eval_runtime': 30.0232, 'eval_samples_per_second': 628.846, 'eval_steps_per_second': 78.606, 'epoch': 1.13}
+ 26%|████████████████████████████▌                                                                               | 7000/26525 [35:04<1:15:17,  4.32it/s]C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\transformers\tokenization_utils_base.py:3980: UserWarning: `as_target_tokenizer` is deprecated and will be removed in v5 of Transformers. You can tokenize your labels by using the argument `text_target` of the regular `__call__` method (either in the same call as your input texts if you use the same keyword arguments, or in a separate call.
+{'loss': 0.2324, 'grad_norm': 3.1326088905334473, 'learning_rate': 1.557979027645377e-05, 'epoch': 1.15}
+{'loss': 0.2012, 'grad_norm': 2.55096435546875, 'learning_rate': 1.5503527168732126e-05, 'epoch': 1.17}
+{'loss': 0.2052, 'grad_norm': 2.99538516998291, 'learning_rate': 1.5427264061010488e-05, 'epoch': 1.19}
+{'loss': 0.2051, 'grad_norm': 2.3914053440093994, 'learning_rate': 1.535100095328885e-05, 'epoch': 1.21}
+{'loss': 0.2065, 'grad_norm': 2.827474355697632, 'learning_rate': 1.527473784556721e-05, 'epoch': 1.23}
+  warnings.warn(                                                                                                                                        
+{'eval_loss': 0.31934934854507446, 'eval_runtime': 29.7209, 'eval_samples_per_second': 635.244, 'eval_steps_per_second': 79.406, 'epoch': 1.23}
+{'loss': 0.1933, 'grad_norm': 3.613664388656616, 'learning_rate': 1.5198474737845568e-05, 'epoch': 1.24}
+{'loss': 0.1961, 'grad_norm': 1.9452285766601562, 'learning_rate': 1.512221163012393e-05, 'epoch': 1.26}
+{'loss': 0.198, 'grad_norm': 3.3703017234802246, 'learning_rate': 1.5045948522402289e-05, 'epoch': 1.28}
+{'loss': 0.1811, 'grad_norm': 2.6398191452026367, 'learning_rate': 1.496968541468065e-05, 'epoch': 1.3}
+{'loss': 0.1936, 'grad_norm': 2.6029176712036133, 'learning_rate': 1.489342230695901e-05, 'epoch': 1.32}
+{'eval_loss': 0.31879615783691406, 'eval_runtime': 30.3806, 'eval_samples_per_second': 621.449, 'eval_steps_per_second': 77.681, 'epoch': 1.32}
+ 30%|████████████████████████████████▌                                                                           | 8000/26525 [40:00<1:11:13,  4.33it/s]C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\transformers\tokenization_utils_base.py:3980: UserWarning: `as_target_tokenizer` is deprecated and will be removed in v5 of Transformers. You can tokenize your labels by using the argument `text_target` of the regular `__call__` method (either in the same call as your input texts if you use the same keyword arguments, or in a separate call.
+{'loss': 0.1865, 'grad_norm': 2.9718167781829834, 'learning_rate': 1.481715919923737e-05, 'epoch': 1.34}
+{'loss': 0.1937, 'grad_norm': 3.2404723167419434, 'learning_rate': 1.474089609151573e-05, 'epoch': 1.36}
+{'loss': 0.1841, 'grad_norm': 3.0767624378204346, 'learning_rate': 1.4664632983794092e-05, 'epoch': 1.38}
+{'loss': 0.1935, 'grad_norm': 3.201793670654297, 'learning_rate': 1.458836987607245e-05, 'epoch': 1.39}
+{'loss': 0.1791, 'grad_norm': 2.565035343170166, 'learning_rate': 1.4512106768350811e-05, 'epoch': 1.41}
+  warnings.warn(                                                                                                                                        
+{'eval_loss': 0.3061051070690155, 'eval_runtime': 29.6139, 'eval_samples_per_second': 637.538, 'eval_steps_per_second': 79.692, 'epoch': 1.41}
+{'loss': 0.195, 'grad_norm': 2.821563720703125, 'learning_rate': 1.4435843660629172e-05, 'epoch': 1.43}
+{'loss': 0.1673, 'grad_norm': 2.340162754058838, 'learning_rate': 1.4359580552907533e-05, 'epoch': 1.45}
+{'loss': 0.1781, 'grad_norm': 2.230466842651367, 'learning_rate': 1.4283317445185893e-05, 'epoch': 1.47}
+{'loss': 0.1768, 'grad_norm': 3.2360012531280518, 'learning_rate': 1.4207054337464253e-05, 'epoch': 1.49}
+{'loss': 0.1688, 'grad_norm': 1.9238052368164062, 'learning_rate': 1.4130791229742614e-05, 'epoch': 1.51}
+{'eval_loss': 0.3057987093925476, 'eval_runtime': 30.0733, 'eval_samples_per_second': 627.799, 'eval_steps_per_second': 78.475, 'epoch': 1.51}
+ 34%|████████████████████████████████████▋                                                                       | 9000/26525 [44:58<1:08:26,  4.27it/s]C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\transformers\tokenization_utils_base.py:3980: UserWarning: `as_target_tokenizer` is deprecated and will be removed in v5 of Transformers. You can tokenize your labels by using the argument `text_target` of the regular `__call__` method (either in the same call as your input texts if you use the same keyword arguments, or in a separate call.
+{'loss': 0.1692, 'grad_norm': 3.1059248447418213, 'learning_rate': 1.4054528122020973e-05, 'epoch': 1.53}
+{'loss': 0.1704, 'grad_norm': 2.0634233951568604, 'learning_rate': 1.3978265014299335e-05, 'epoch': 1.55}
+{'loss': 0.1709, 'grad_norm': 1.6699992418289185, 'learning_rate': 1.3902001906577694e-05, 'epoch': 1.56}
+{'loss': 0.1733, 'grad_norm': 2.3982203006744385, 'learning_rate': 1.3825738798856054e-05, 'epoch': 1.58}
+{'loss': 0.172, 'grad_norm': 2.15734601020813, 'learning_rate': 1.3749475691134415e-05, 'epoch': 1.6}
+  warnings.warn(                                                                                                                                        
+{'eval_loss': 0.29446208477020264, 'eval_runtime': 30.0689, 'eval_samples_per_second': 627.89, 'eval_steps_per_second': 78.486, 'epoch': 1.6}
+{'loss': 0.1522, 'grad_norm': 2.9051990509033203, 'learning_rate': 1.3673212583412776e-05, 'epoch': 1.62}
+{'loss': 0.1484, 'grad_norm': 2.333858013153076, 'learning_rate': 1.3596949475691134e-05, 'epoch': 1.64}
+{'loss': 0.157, 'grad_norm': 1.809619665145874, 'learning_rate': 1.3520686367969495e-05, 'epoch': 1.66}
+{'loss': 0.1666, 'grad_norm': 2.5917906761169434, 'learning_rate': 1.3444423260247857e-05, 'epoch': 1.68}
+{'loss': 0.1652, 'grad_norm': 2.9141650199890137, 'learning_rate': 1.3368160152526218e-05, 'epoch': 1.7}
+{'eval_loss': 0.2926972806453705, 'eval_runtime': 30.0917, 'eval_samples_per_second': 627.415, 'eval_steps_per_second': 78.427, 'epoch': 1.7}
+ 38%|████████████████████████████████████████▎                                                                  | 10000/26525 [49:55<1:03:36,  4.33it/s]C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\transformers\tokenization_utils_base.py:3980: UserWarning: `as_target_tokenizer` is deprecated and will be removed in v5 of Transformers. You can tokenize your labels by using the argument `text_target` of the regular `__call__` method (either in the same call as your input texts if you use the same keyword arguments, or in a separate call.
+{'loss': 0.1615, 'grad_norm': 2.799776792526245, 'learning_rate': 1.3291897044804576e-05, 'epoch': 1.72}
+{'loss': 0.1487, 'grad_norm': 3.439925193786621, 'learning_rate': 1.3215633937082937e-05, 'epoch': 1.73}
+{'loss': 0.1409, 'grad_norm': 1.752408504486084, 'learning_rate': 1.3139370829361298e-05, 'epoch': 1.75}
+{'loss': 0.1436, 'grad_norm': 2.1057851314544678, 'learning_rate': 1.3063107721639658e-05, 'epoch': 1.77}
+{'loss': 0.1415, 'grad_norm': 2.2889890670776367, 'learning_rate': 1.298684461391802e-05, 'epoch': 1.79}
+  warnings.warn(                                                                                                                                        
+{'eval_loss': 0.2873260974884033, 'eval_runtime': 29.6795, 'eval_samples_per_second': 636.13, 'eval_steps_per_second': 79.516, 'epoch': 1.79}
+{'loss': 0.1419, 'grad_norm': 2.4323172569274902, 'learning_rate': 1.2910581506196377e-05, 'epoch': 1.81}
+{'loss': 0.1443, 'grad_norm': 2.127150297164917, 'learning_rate': 1.2834318398474738e-05, 'epoch': 1.83}
+{'loss': 0.1453, 'grad_norm': 2.07452130317688, 'learning_rate': 1.27580552907531e-05, 'epoch': 1.85}
+{'loss': 0.1368, 'grad_norm': 3.16383957862854, 'learning_rate': 1.2681792183031461e-05, 'epoch': 1.87}
+{'loss': 0.1378, 'grad_norm': 1.9864482879638672, 'learning_rate': 1.2605529075309819e-05, 'epoch': 1.89}
+{'eval_loss': 0.28498589992523193, 'eval_runtime': 29.7641, 'eval_samples_per_second': 634.321, 'eval_steps_per_second': 79.29, 'epoch': 1.89}
+ 41%|█████████████████████████████████████████████▏                                                               | 11000/26525 [54:51<59:49,  4.33it/s]C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\transformers\tokenization_utils_base.py:3980: UserWarning: `as_target_tokenizer` is deprecated and will be removed in v5 of Transformers. You can tokenize your labels by using the argument `text_target` of the regular `__call__` method (either in the same call as your input texts if you use the same keyword arguments, or in a separate call.
+{'loss': 0.1379, 'grad_norm': 1.9921176433563232, 'learning_rate': 1.252926596758818e-05, 'epoch': 1.9}
+{'loss': 0.1446, 'grad_norm': 1.8816078901290894, 'learning_rate': 1.2453002859866541e-05, 'epoch': 1.92}
+{'loss': 0.1412, 'grad_norm': 2.0470895767211914, 'learning_rate': 1.2376739752144903e-05, 'epoch': 1.94}
+{'loss': 0.1301, 'grad_norm': 1.6318320035934448, 'learning_rate': 1.230047664442326e-05, 'epoch': 1.96}
+{'loss': 0.143, 'grad_norm': 2.002333641052246, 'learning_rate': 1.2224213536701622e-05, 'epoch': 1.98}
+  warnings.warn(                                                                                                                                        
+{'eval_loss': 0.28211864829063416, 'eval_runtime': 30.0544, 'eval_samples_per_second': 628.195, 'eval_steps_per_second': 78.524, 'epoch': 1.98}
+{'loss': 0.1288, 'grad_norm': 2.237031936645508, 'learning_rate': 1.2147950428979981e-05, 'epoch': 2.0}
+{'loss': 0.1144, 'grad_norm': 2.9884302616119385, 'learning_rate': 1.2071687321258343e-05, 'epoch': 2.02}
+{'loss': 0.1118, 'grad_norm': 2.2715978622436523, 'learning_rate': 1.1995424213536702e-05, 'epoch': 2.04}
+{'loss': 0.1164, 'grad_norm': 2.6720612049102783, 'learning_rate': 1.1919161105815062e-05, 'epoch': 2.05}
+{'loss': 0.1153, 'grad_norm': 1.6681954860687256, 'learning_rate': 1.1842897998093423e-05, 'epoch': 2.07}
+{'eval_loss': 0.28606173396110535, 'eval_runtime': 29.762, 'eval_samples_per_second': 634.365, 'eval_steps_per_second': 79.296, 'epoch': 2.07}
+ 45%|████████████████████████████████████████████████▍                                                          | 12000/26525 [59:49<1:00:33,  4.00it/s]C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\transformers\tokenization_utils_base.py:3980: UserWarning: `as_target_tokenizer` is deprecated and will be removed in v5 of Transformers. You can tokenize your labels by using the argument `text_target` of the regular `__call__` method (either in the same call as your input texts if you use the same keyword arguments, or in a separate call.
+{'loss': 0.1207, 'grad_norm': 1.792034387588501, 'learning_rate': 1.1766634890371784e-05, 'epoch': 2.09}
+{'loss': 0.114, 'grad_norm': 1.2510942220687866, 'learning_rate': 1.1690371782650145e-05, 'epoch': 2.11}
+{'loss': 0.1116, 'grad_norm': 1.4839986562728882, 'learning_rate': 1.1614108674928503e-05, 'epoch': 2.13}
+{'loss': 0.1058, 'grad_norm': 2.5161867141723633, 'learning_rate': 1.1537845567206865e-05, 'epoch': 2.15}
+{'loss': 0.1058, 'grad_norm': 2.3247480392456055, 'learning_rate': 1.1461582459485226e-05, 'epoch': 2.17}
+  warnings.warn(                                                                                                                                        
+{'eval_loss': 0.27738964557647705, 'eval_runtime': 30.0782, 'eval_samples_per_second': 627.698, 'eval_steps_per_second': 78.462, 'epoch': 2.17}
+{'loss': 0.1151, 'grad_norm': 2.332848310470581, 'learning_rate': 1.1385319351763585e-05, 'epoch': 2.19}
+{'loss': 0.1095, 'grad_norm': 2.522618293762207, 'learning_rate': 1.1309056244041945e-05, 'epoch': 2.21}
+{'loss': 0.114, 'grad_norm': 1.4512890577316284, 'learning_rate': 1.1232793136320306e-05, 'epoch': 2.22}
+{'loss': 0.1056, 'grad_norm': 1.8602761030197144, 'learning_rate': 1.1156530028598666e-05, 'epoch': 2.24}
+{'loss': 0.1002, 'grad_norm': 2.3177542686462402, 'learning_rate': 1.1080266920877027e-05, 'epoch': 2.26}
+{'eval_loss': 0.27747002243995667, 'eval_runtime': 29.7013, 'eval_samples_per_second': 635.662, 'eval_steps_per_second': 79.458, 'epoch': 2.26}
+ 49%|████████████████████████████████████████████████████▍                                                      | 13000/26525 [1:04:42<54:31,  4.13it/s]C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\transformers\tokenization_utils_base.py:3980: UserWarning: `as_target_tokenizer` is deprecated and will be removed in v5 of Transformers. You can tokenize your labels by using the argument `text_target` of the regular `__call__` method (either in the same call as your input texts if you use the same keyword arguments, or in a separate call.
+{'loss': 0.107, 'grad_norm': 2.1002891063690186, 'learning_rate': 1.1004003813155387e-05, 'epoch': 2.28}
+{'loss': 0.1108, 'grad_norm': 2.1562209129333496, 'learning_rate': 1.0927740705433746e-05, 'epoch': 2.3}
+{'loss': 0.1018, 'grad_norm': 1.6132571697235107, 'learning_rate': 1.0851477597712108e-05, 'epoch': 2.32}
+{'loss': 0.1068, 'grad_norm': 2.436771869659424, 'learning_rate': 1.0775214489990469e-05, 'epoch': 2.34}
+{'loss': 0.1032, 'grad_norm': 2.3436355590820312, 'learning_rate': 1.0698951382268827e-05, 'epoch': 2.36}
+  warnings.warn(                                                                                                                                        
+{'eval_loss': 0.2754884958267212, 'eval_runtime': 28.4832, 'eval_samples_per_second': 662.847, 'eval_steps_per_second': 82.856, 'epoch': 2.36}
+{'loss': 0.1013, 'grad_norm': 1.8623909950256348, 'learning_rate': 1.0622688274547188e-05, 'epoch': 2.38}
+{'loss': 0.1069, 'grad_norm': 2.051872491836548, 'learning_rate': 1.054642516682555e-05, 'epoch': 2.39}
+{'loss': 0.1025, 'grad_norm': 1.6358054876327515, 'learning_rate': 1.047016205910391e-05, 'epoch': 2.41}
+{'loss': 0.1007, 'grad_norm': 2.4137144088745117, 'learning_rate': 1.039389895138227e-05, 'epoch': 2.43}
+{'loss': 0.0979, 'grad_norm': 2.336174488067627, 'learning_rate': 1.031763584366063e-05, 'epoch': 2.45}
+{'eval_loss': 0.27350085973739624, 'eval_runtime': 28.3061, 'eval_samples_per_second': 666.995, 'eval_steps_per_second': 83.374, 'epoch': 2.45}
+ 53%|████████████████████████████████████████████████████████▍                                                  | 14000/26525 [1:09:36<49:22,  4.23it/s]C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\transformers\tokenization_utils_base.py:3980: UserWarning: `as_target_tokenizer` is deprecated and will be removed in v5 of Transformers. You can tokenize your labels by using the argument `text_target` of the regular `__call__` method (either in the same call as your input texts if you use the same keyword arguments, or in a separate call.
+{'loss': 0.0951, 'grad_norm': 1.9267812967300415, 'learning_rate': 1.0241372735938991e-05, 'epoch': 2.47}
+{'loss': 0.0893, 'grad_norm': 2.641235113143921, 'learning_rate': 1.016510962821735e-05, 'epoch': 2.49}
+{'loss': 0.1028, 'grad_norm': 1.8261982202529907, 'learning_rate': 1.0088846520495712e-05, 'epoch': 2.51}
+{'loss': 0.0995, 'grad_norm': 2.3837790489196777, 'learning_rate': 1.0012583412774071e-05, 'epoch': 2.53}
+{'loss': 0.0994, 'grad_norm': 2.9293644428253174, 'learning_rate': 9.93632030505243e-06, 'epoch': 2.54}
+  warnings.warn(                                                                                                                                        
+{'eval_loss': 0.2708527445793152, 'eval_runtime': 28.5262, 'eval_samples_per_second': 661.849, 'eval_steps_per_second': 82.731, 'epoch': 2.54}
+{'loss': 0.0996, 'grad_norm': 1.9496768712997437, 'learning_rate': 9.860057197330792e-06, 'epoch': 2.56}
+{'loss': 0.094, 'grad_norm': 1.9916399717330933, 'learning_rate': 9.783794089609152e-06, 'epoch': 2.58}
+{'loss': 0.0961, 'grad_norm': 1.8357467651367188, 'learning_rate': 9.707530981887513e-06, 'epoch': 2.6}
+{'loss': 0.091, 'grad_norm': 1.2122275829315186, 'learning_rate': 9.631267874165872e-06, 'epoch': 2.62}
+{'loss': 0.0976, 'grad_norm': 2.037245273590088, 'learning_rate': 9.555004766444234e-06, 'epoch': 2.64}
+{'eval_loss': 0.2689324915409088, 'eval_runtime': 28.5398, 'eval_samples_per_second': 661.532, 'eval_steps_per_second': 82.692, 'epoch': 2.64}
+ 57%|████████████████████████████████████████████████████████████▌                                              | 15000/26525 [1:14:29<45:31,  4.22it/s]C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\transformers\tokenization_utils_base.py:3980: UserWarning: `as_target_tokenizer` is deprecated and will be removed in v5 of Transformers. You can tokenize your labels by using the argument `text_target` of the regular `__call__` method (either in the same call as your input texts if you use the same keyword arguments, or in a separate call.
+{'loss': 0.093, 'grad_norm': 1.7445404529571533, 'learning_rate': 9.478741658722593e-06, 'epoch': 2.66}
+{'loss': 0.0932, 'grad_norm': 1.77749502658844, 'learning_rate': 9.402478551000955e-06, 'epoch': 2.68}
+{'loss': 0.089, 'grad_norm': 2.0157129764556885, 'learning_rate': 9.326215443279314e-06, 'epoch': 2.7}
+{'loss': 0.0879, 'grad_norm': 2.5360097885131836, 'learning_rate': 9.249952335557675e-06, 'epoch': 2.71}
+{'loss': 0.0985, 'grad_norm': 2.373980760574341, 'learning_rate': 9.173689227836035e-06, 'epoch': 2.73}
+  warnings.warn(                                                                                                                                        
+{'eval_loss': 0.26821470260620117, 'eval_runtime': 28.473, 'eval_samples_per_second': 663.083, 'eval_steps_per_second': 82.885, 'epoch': 2.73}
+{'loss': 0.0932, 'grad_norm': 2.022528648376465, 'learning_rate': 9.097426120114395e-06, 'epoch': 2.75}
+{'loss': 0.0937, 'grad_norm': 1.5847190618515015, 'learning_rate': 9.021163012392756e-06, 'epoch': 2.77}
+{'loss': 0.0948, 'grad_norm': 1.9915341138839722, 'learning_rate': 8.944899904671115e-06, 'epoch': 2.79}
+{'loss': 0.0916, 'grad_norm': 2.2289605140686035, 'learning_rate': 8.868636796949477e-06, 'epoch': 2.81}
+{'loss': 0.0904, 'grad_norm': 1.5524734258651733, 'learning_rate': 8.793136320305054e-06, 'epoch': 2.83}
+{'eval_loss': 0.2673134505748749, 'eval_runtime': 28.4415, 'eval_samples_per_second': 663.82, 'eval_steps_per_second': 82.977, 'epoch': 2.83}
+ 60%|████████████████████████████████████████████████████████████████▌                                          | 16000/26525 [1:19:22<40:51,  4.29it/s]C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\transformers\tokenization_utils_base.py:3980: UserWarning: `as_target_tokenizer` is deprecated and will be removed in v5 of Transformers. You can tokenize your labels by using the argument `text_target` of the regular `__call__` method (either in the same call as your input texts if you use the same keyword arguments, or in a separate call.
+{'loss': 0.0851, 'grad_norm': 2.3252570629119873, 'learning_rate': 8.716873212583414e-06, 'epoch': 2.85}
+{'loss': 0.0847, 'grad_norm': 1.5394536256790161, 'learning_rate': 8.640610104861775e-06, 'epoch': 2.87}
+{'loss': 0.0872, 'grad_norm': 2.554670810699463, 'learning_rate': 8.564346997140134e-06, 'epoch': 2.88}
+{'loss': 0.0843, 'grad_norm': 1.748451590538025, 'learning_rate': 8.488083889418494e-06, 'epoch': 2.9}
+{'loss': 0.0863, 'grad_norm': 1.229463815689087, 'learning_rate': 8.411820781696855e-06, 'epoch': 2.92}
+  warnings.warn(                                                                                                                                        
+{'eval_loss': 0.26679733395576477, 'eval_runtime': 28.3904, 'eval_samples_per_second': 665.013, 'eval_steps_per_second': 83.127, 'epoch': 2.92}
+{'loss': 0.0865, 'grad_norm': 1.38668954372406, 'learning_rate': 8.335557673975215e-06, 'epoch': 2.94}
+{'loss': 0.084, 'grad_norm': 1.53010094165802, 'learning_rate': 8.260057197330792e-06, 'epoch': 2.96}
+{'loss': 0.0842, 'grad_norm': 1.616916298866272, 'learning_rate': 8.183794089609153e-06, 'epoch': 2.98}
+{'loss': 0.0853, 'grad_norm': 0.9632316827774048, 'learning_rate': 8.107530981887513e-06, 'epoch': 3.0}
+{'loss': 0.0757, 'grad_norm': 1.5711209774017334, 'learning_rate': 8.031267874165873e-06, 'epoch': 3.02}
+{'eval_loss': 0.2641814947128296, 'eval_runtime': 28.4001, 'eval_samples_per_second': 664.786, 'eval_steps_per_second': 83.098, 'epoch': 3.02}
+ 64%|████████████████████████████████████████████████████████████████████▌                                      | 17000/26525 [1:24:14<38:03,  4.17it/s]C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\transformers\tokenization_utils_base.py:3980: UserWarning: `as_target_tokenizer` is deprecated and will be removed in v5 of Transformers. You can tokenize your labels by using the argument `text_target` of the regular `__call__` method (either in the same call as your input texts if you use the same keyword arguments, or in a separate call.
+{'loss': 0.0744, 'grad_norm': 1.2635009288787842, 'learning_rate': 7.955004766444234e-06, 'epoch': 3.03}
+{'loss': 0.0739, 'grad_norm': 1.521104097366333, 'learning_rate': 7.878741658722593e-06, 'epoch': 3.05}
+{'loss': 0.0731, 'grad_norm': 1.17728590965271, 'learning_rate': 7.802478551000953e-06, 'epoch': 3.07}
+{'loss': 0.0723, 'grad_norm': 1.632279872894287, 'learning_rate': 7.726215443279314e-06, 'epoch': 3.09}
+{'loss': 0.0704, 'grad_norm': 1.9456003904342651, 'learning_rate': 7.649952335557674e-06, 'epoch': 3.11}
+  warnings.warn(                                                                                                                                        
+{'eval_loss': 0.2657868266105652, 'eval_runtime': 28.4837, 'eval_samples_per_second': 662.836, 'eval_steps_per_second': 82.854, 'epoch': 3.11}
+{'loss': 0.0754, 'grad_norm': 1.868531346321106, 'learning_rate': 7.574451858913251e-06, 'epoch': 3.13}
+{'loss': 0.0747, 'grad_norm': 1.0678807497024536, 'learning_rate': 7.4981887511916116e-06, 'epoch': 3.15}
+{'loss': 0.0703, 'grad_norm': 1.7173272371292114, 'learning_rate': 7.422688274547188e-06, 'epoch': 3.17}
+{'loss': 0.0678, 'grad_norm': 1.1118696928024292, 'learning_rate': 7.346425166825549e-06, 'epoch': 3.19}
+{'loss': 0.072, 'grad_norm': 2.0119738578796387, 'learning_rate': 7.270162059103909e-06, 'epoch': 3.2}
+{'eval_loss': 0.26473376154899597, 'eval_runtime': 28.4364, 'eval_samples_per_second': 663.937, 'eval_steps_per_second': 82.992, 'epoch': 3.2}
+ 68%|████████████████████████████████████████████████████████████████████████▌                                  | 18000/26525 [1:29:06<32:56,  4.31it/s]C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\transformers\tokenization_utils_base.py:3980: UserWarning: `as_target_tokenizer` is deprecated and will be removed in v5 of Transformers. You can tokenize your labels by using the argument `text_target` of the regular `__call__` method (either in the same call as your input texts if you use the same keyword arguments, or in a separate call.
+{'loss': 0.0698, 'grad_norm': 1.3391050100326538, 'learning_rate': 7.19389895138227e-06, 'epoch': 3.22}
+{'loss': 0.0718, 'grad_norm': 2.3678927421569824, 'learning_rate': 7.11763584366063e-06, 'epoch': 3.24}
+{'loss': 0.076, 'grad_norm': 1.670841097831726, 'learning_rate': 7.04137273593899e-06, 'epoch': 3.26}
+{'loss': 0.0734, 'grad_norm': 2.317354917526245, 'learning_rate': 6.9651096282173506e-06, 'epoch': 3.28}
+{'loss': 0.0728, 'grad_norm': 2.016223192214966, 'learning_rate': 6.888846520495711e-06, 'epoch': 3.3}
+  warnings.warn(                                                                                                                                        
+{'eval_loss': 0.2649157643318176, 'eval_runtime': 28.612, 'eval_samples_per_second': 659.864, 'eval_steps_per_second': 82.483, 'epoch': 3.3}
+{'loss': 0.0724, 'grad_norm': 1.6660600900650024, 'learning_rate': 6.8125834127740706e-06, 'epoch': 3.32}
+{'loss': 0.0721, 'grad_norm': 1.7065186500549316, 'learning_rate': 6.736320305052432e-06, 'epoch': 3.34}
+{'loss': 0.0707, 'grad_norm': 1.9285420179367065, 'learning_rate': 6.660057197330791e-06, 'epoch': 3.36}
+{'loss': 0.0693, 'grad_norm': 1.3139127492904663, 'learning_rate': 6.583794089609153e-06, 'epoch': 3.37}
+{'loss': 0.0745, 'grad_norm': 2.6325340270996094, 'learning_rate': 6.507530981887512e-06, 'epoch': 3.39}
+{'eval_loss': 0.26550596952438354, 'eval_runtime': 28.396, 'eval_samples_per_second': 664.882, 'eval_steps_per_second': 83.11, 'epoch': 3.39}
+ 72%|████████████████████████████████████████████████████████████████████████████▋                              | 19000/26525 [1:33:58<29:52,  4.20it/s]C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\transformers\tokenization_utils_base.py:3980: UserWarning: `as_target_tokenizer` is deprecated and will be removed in v5 of Transformers. You can tokenize your labels by using the argument `text_target` of the regular `__call__` method (either in the same call as your input texts if you use the same keyword arguments, or in a separate call.
+{'loss': 0.0701, 'grad_norm': 1.7607171535491943, 'learning_rate': 6.431267874165873e-06, 'epoch': 3.41}
+{'loss': 0.0716, 'grad_norm': 1.7305740118026733, 'learning_rate': 6.355004766444233e-06, 'epoch': 3.43}
+{'loss': 0.0742, 'grad_norm': 1.0726208686828613, 'learning_rate': 6.2787416587225935e-06, 'epoch': 3.45}
+{'loss': 0.071, 'grad_norm': 1.2799338102340698, 'learning_rate': 6.202478551000953e-06, 'epoch': 3.47}
+{'loss': 0.0722, 'grad_norm': 1.0836890935897827, 'learning_rate': 6.126215443279314e-06, 'epoch': 3.49}
+  warnings.warn(                                                                                                                                        
+{'eval_loss': 0.26417839527130127, 'eval_runtime': 28.358, 'eval_samples_per_second': 665.774, 'eval_steps_per_second': 83.222, 'epoch': 3.49}
+{'loss': 0.0734, 'grad_norm': 2.1545193195343018, 'learning_rate': 6.049952335557674e-06, 'epoch': 3.51}
+{'loss': 0.0688, 'grad_norm': 1.3121006488800049, 'learning_rate': 5.973689227836035e-06, 'epoch': 3.52}
+{'loss': 0.0715, 'grad_norm': 1.3101919889450073, 'learning_rate': 5.8974261201143956e-06, 'epoch': 3.54}
+{'loss': 0.0664, 'grad_norm': 0.7688517570495605, 'learning_rate': 5.821163012392755e-06, 'epoch': 3.56}
+{'loss': 0.0685, 'grad_norm': 1.537657618522644, 'learning_rate': 5.744899904671116e-06, 'epoch': 3.58}
+{'eval_loss': 0.2643798291683197, 'eval_runtime': 28.4217, 'eval_samples_per_second': 664.28, 'eval_steps_per_second': 83.035, 'epoch': 3.58}
+ 75%|████████████████████████████████████████████████████████████████████████████████▋                          | 20000/26525 [1:39:02<28:25,  3.83it/s]C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\transformers\tokenization_utils_base.py:3980: UserWarning: `as_target_tokenizer` is deprecated and will be removed in v5 of Transformers. You can tokenize your labels by using the argument `text_target` of the regular `__call__` method (either in the same call as your input texts if you use the same keyword arguments, or in a separate call.
+{'loss': 0.0669, 'grad_norm': 1.8172273635864258, 'learning_rate': 5.668636796949476e-06, 'epoch': 3.6}
+{'loss': 0.0707, 'grad_norm': 1.8819109201431274, 'learning_rate': 5.592373689227837e-06, 'epoch': 3.62}
+{'loss': 0.074, 'grad_norm': 2.554323673248291, 'learning_rate': 5.516110581506197e-06, 'epoch': 3.64}
+{'loss': 0.0682, 'grad_norm': 1.608338713645935, 'learning_rate': 5.439847473784557e-06, 'epoch': 3.66}
+{'loss': 0.0697, 'grad_norm': 1.5950316190719604, 'learning_rate': 5.363584366062918e-06, 'epoch': 3.68}
+  warnings.warn(                                                                                                                                        
+{'eval_loss': 0.2658444046974182, 'eval_runtime': 28.342, 'eval_samples_per_second': 666.149, 'eval_steps_per_second': 83.269, 'epoch': 3.68}
+{'loss': 0.067, 'grad_norm': 1.83637273311615, 'learning_rate': 5.287321258341278e-06, 'epoch': 3.69}
+{'loss': 0.0657, 'grad_norm': 2.2640252113342285, 'learning_rate': 5.211058150619638e-06, 'epoch': 3.71}
+{'loss': 0.0695, 'grad_norm': 0.9267818927764893, 'learning_rate': 5.134795042897999e-06, 'epoch': 3.73}
+{'loss': 0.0662, 'grad_norm': 0.8912960290908813, 'learning_rate': 5.0585319351763585e-06, 'epoch': 3.75}
+{'loss': 0.0706, 'grad_norm': 1.7617218494415283, 'learning_rate': 4.982268827454719e-06, 'epoch': 3.77}
+{'eval_loss': 0.26541635394096375, 'eval_runtime': 33.9963, 'eval_samples_per_second': 555.355, 'eval_steps_per_second': 69.419, 'epoch': 3.77}
+ 79%|████████████████████████████████████████████████████████████████████████████████████▋                      | 21000/26525 [1:44:08<22:11,  4.15it/s]C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\transformers\tokenization_utils_base.py:3980: UserWarning: `as_target_tokenizer` is deprecated and will be removed in v5 of Transformers. You can tokenize your labels by using the argument `text_target` of the regular `__call__` method (either in the same call as your input texts if you use the same keyword arguments, or in a separate call.
+{'loss': 0.0693, 'grad_norm': 1.1094112396240234, 'learning_rate': 4.906005719733079e-06, 'epoch': 3.79}
+{'loss': 0.0665, 'grad_norm': 1.2042267322540283, 'learning_rate': 4.82974261201144e-06, 'epoch': 3.81}
+{'loss': 0.0649, 'grad_norm': 1.0872259140014648, 'learning_rate': 4.7534795042898e-06, 'epoch': 3.83}
+{'loss': 0.0667, 'grad_norm': 0.9506762623786926, 'learning_rate': 4.6772163965681605e-06, 'epoch': 3.85}
+{'loss': 0.0627, 'grad_norm': 1.2941443920135498, 'learning_rate': 4.600953288846521e-06, 'epoch': 3.86}
+  warnings.warn(                                                                                                                                        
+{'eval_loss': 0.2650076448917389, 'eval_runtime': 29.185, 'eval_samples_per_second': 646.907, 'eval_steps_per_second': 80.863, 'epoch': 3.86}
+{'loss': 0.0635, 'grad_norm': 2.2046377658843994, 'learning_rate': 4.524690181124881e-06, 'epoch': 3.88}
+{'loss': 0.0678, 'grad_norm': 1.6846165657043457, 'learning_rate': 4.448427073403242e-06, 'epoch': 3.9}
+{'loss': 0.067, 'grad_norm': 1.322371482849121, 'learning_rate': 4.372163965681601e-06, 'epoch': 3.92}
+{'loss': 0.0624, 'grad_norm': 1.3142222166061401, 'learning_rate': 4.295900857959962e-06, 'epoch': 3.94}
+{'loss': 0.0654, 'grad_norm': 1.6410901546478271, 'learning_rate': 4.219637750238322e-06, 'epoch': 3.96}
+{'eval_loss': 0.26470184326171875, 'eval_runtime': 30.1285, 'eval_samples_per_second': 626.649, 'eval_steps_per_second': 78.331, 'epoch': 3.96}
+ 83%|████████████████████████████████████████████████████████████████████████████████████████▋                  | 22000/26525 [1:49:13<17:32,  4.30it/s]C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\transformers\tokenization_utils_base.py:3980: UserWarning: `as_target_tokenizer` is deprecated and will be removed in v5 of Transformers. You can tokenize your labels by using the argument `text_target` of the regular `__call__` method (either in the same call as your input texts if you use the same keyword arguments, or in a separate call.
+{'loss': 0.0669, 'grad_norm': 1.8964872360229492, 'learning_rate': 4.143374642516683e-06, 'epoch': 3.98}
+{'loss': 0.0648, 'grad_norm': 1.3347671031951904, 'learning_rate': 4.067111534795044e-06, 'epoch': 4.0}
+{'loss': 0.0556, 'grad_norm': 1.0033721923828125, 'learning_rate': 3.9908484270734034e-06, 'epoch': 4.02}
+{'loss': 0.0589, 'grad_norm': 0.9891268014907837, 'learning_rate': 3.914585319351764e-06, 'epoch': 4.03}
+{'loss': 0.0592, 'grad_norm': 0.9722353219985962, 'learning_rate': 3.838322211630124e-06, 'epoch': 4.05}
+  warnings.warn(                                                                                                                                        
+{'eval_loss': 0.26494696736335754, 'eval_runtime': 31.6337, 'eval_samples_per_second': 596.833, 'eval_steps_per_second': 74.604, 'epoch': 4.05}
+{'loss': 0.0636, 'grad_norm': 1.245354175567627, 'learning_rate': 3.7620591039084847e-06, 'epoch': 4.07}
+{'loss': 0.0608, 'grad_norm': 1.6307311058044434, 'learning_rate': 3.685795996186845e-06, 'epoch': 4.09}
+{'loss': 0.056, 'grad_norm': 1.391534447669983, 'learning_rate': 3.6095328884652055e-06, 'epoch': 4.11}
+{'loss': 0.0643, 'grad_norm': 2.160615921020508, 'learning_rate': 3.5332697807435655e-06, 'epoch': 4.13}
+{'loss': 0.0608, 'grad_norm': 2.0975341796875, 'learning_rate': 3.457006673021926e-06, 'epoch': 4.15}
+{'eval_loss': 0.26391109824180603, 'eval_runtime': 29.7364, 'eval_samples_per_second': 634.912, 'eval_steps_per_second': 79.364, 'epoch': 4.15}
+ 87%|████████████████████████████████████████████████████████████████████████████████████████████▊              | 23000/26525 [1:54:17<13:22,  4.39it/s]C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\transformers\tokenization_utils_base.py:3980: UserWarning: `as_target_tokenizer` is deprecated and will be removed in v5 of Transformers. You can tokenize your labels by using the argument `text_target` of the regular `__call__` method (either in the same call as your input texts if you use the same keyword arguments, or in a separate call.
+{'loss': 0.0606, 'grad_norm': 1.2507745027542114, 'learning_rate': 3.3807435653002864e-06, 'epoch': 4.17}
+{'loss': 0.0558, 'grad_norm': 0.840965986251831, 'learning_rate': 3.3044804575786463e-06, 'epoch': 4.18}
+{'loss': 0.056, 'grad_norm': 0.4979916512966156, 'learning_rate': 3.2282173498570068e-06, 'epoch': 4.2}
+{'loss': 0.0534, 'grad_norm': 1.0171997547149658, 'learning_rate': 3.151954242135367e-06, 'epoch': 4.22}
+{'loss': 0.0583, 'grad_norm': 1.6716114282608032, 'learning_rate': 3.0756911344137276e-06, 'epoch': 4.24}
+  warnings.warn(                                                                                                                                        
+{'eval_loss': 0.2624177932739258, 'eval_runtime': 29.7621, 'eval_samples_per_second': 634.364, 'eval_steps_per_second': 79.295, 'epoch': 4.24}
+{'loss': 0.0595, 'grad_norm': 1.5454638004302979, 'learning_rate': 2.9994280266920876e-06, 'epoch': 4.26}
+{'loss': 0.0584, 'grad_norm': 1.3654967546463013, 'learning_rate': 2.923164918970448e-06, 'epoch': 4.28}
+{'loss': 0.0565, 'grad_norm': 0.7984724044799805, 'learning_rate': 2.8469018112488084e-06, 'epoch': 4.3}
+{'loss': 0.0601, 'grad_norm': 2.112586498260498, 'learning_rate': 2.770638703527169e-06, 'epoch': 4.32}
+{'loss': 0.0537, 'grad_norm': 0.9887109398841858, 'learning_rate': 2.6943755958055297e-06, 'epoch': 4.34}
+{'eval_loss': 0.2621687650680542, 'eval_runtime': 30.4346, 'eval_samples_per_second': 620.346, 'eval_steps_per_second': 77.543, 'epoch': 4.34}
+ 90%|████████████████████████████████████████████████████████████████████████████████████████████████▊          | 24000/26525 [1:59:25<09:53,  4.25it/s]C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\transformers\tokenization_utils_base.py:3980: UserWarning: `as_target_tokenizer` is deprecated and will be removed in v5 of Transformers. You can tokenize your labels by using the argument `text_target` of the regular `__call__` method (either in the same call as your input texts if you use the same keyword arguments, or in a separate call.
+{'loss': 0.0574, 'grad_norm': 1.2044059038162231, 'learning_rate': 2.6181124880838897e-06, 'epoch': 4.35}
+{'loss': 0.0582, 'grad_norm': 1.7683321237564087, 'learning_rate': 2.54184938036225e-06, 'epoch': 4.37}
+{'loss': 0.0576, 'grad_norm': 1.9361075162887573, 'learning_rate': 2.46558627264061e-06, 'epoch': 4.39}
+{'loss': 0.0587, 'grad_norm': 1.4619375467300415, 'learning_rate': 2.389323164918971e-06, 'epoch': 4.41}
+{'loss': 0.0604, 'grad_norm': 2.0367085933685303, 'learning_rate': 2.313060057197331e-06, 'epoch': 4.43}
+  warnings.warn(                                                                                                                                        
+{'eval_loss': 0.2618367075920105, 'eval_runtime': 29.755, 'eval_samples_per_second': 634.515, 'eval_steps_per_second': 79.314, 'epoch': 4.43}
+{'loss': 0.0585, 'grad_norm': 1.3213598728179932, 'learning_rate': 2.2367969494756913e-06, 'epoch': 4.45}
+{'loss': 0.0561, 'grad_norm': 1.4324655532836914, 'learning_rate': 2.1605338417540518e-06, 'epoch': 4.47}
+{'loss': 0.0615, 'grad_norm': 1.2802890539169312, 'learning_rate': 2.084270734032412e-06, 'epoch': 4.49}
+{'loss': 0.061, 'grad_norm': 1.5663518905639648, 'learning_rate': 2.008007626310772e-06, 'epoch': 4.51}
+{'loss': 0.058, 'grad_norm': 1.1616055965423584, 'learning_rate': 1.9317445185891326e-06, 'epoch': 4.52}
+{'eval_loss': 0.26225709915161133, 'eval_runtime': 30.1587, 'eval_samples_per_second': 626.022, 'eval_steps_per_second': 78.253, 'epoch': 4.52}
+ 94%|████████████████████████████████████████████████████████████████████████████████████████████████████▊      | 25000/26525 [2:04:25<06:02,  4.21it/s]C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\transformers\tokenization_utils_base.py:3980: UserWarning: `as_target_tokenizer` is deprecated and will be removed in v5 of Transformers. You can tokenize your labels by using the argument `text_target` of the regular `__call__` method (either in the same call as your input texts if you use the same keyword arguments, or in a separate call.
+{'loss': 0.0566, 'grad_norm': 0.8990124464035034, 'learning_rate': 1.855481410867493e-06, 'epoch': 4.54}
+{'loss': 0.0577, 'grad_norm': 1.9495981931686401, 'learning_rate': 1.7792183031458534e-06, 'epoch': 4.56}
+{'loss': 0.0547, 'grad_norm': 1.3807002305984497, 'learning_rate': 1.7029551954242138e-06, 'epoch': 4.58}
+{'loss': 0.0578, 'grad_norm': 1.6786991357803345, 'learning_rate': 1.626692087702574e-06, 'epoch': 4.6}
+{'loss': 0.0591, 'grad_norm': 1.5953898429870605, 'learning_rate': 1.5504289799809345e-06, 'epoch': 4.62}
+  warnings.warn(                                                                                                                                        
+{'eval_loss': 0.2612435519695282, 'eval_runtime': 28.8684, 'eval_samples_per_second': 654.002, 'eval_steps_per_second': 81.75, 'epoch': 4.62}
+{'loss': 0.0541, 'grad_norm': 1.2567119598388672, 'learning_rate': 1.4741658722592947e-06, 'epoch': 4.64}
+{'loss': 0.0543, 'grad_norm': 1.1415691375732422, 'learning_rate': 1.397902764537655e-06, 'epoch': 4.66}
+{'loss': 0.0571, 'grad_norm': 0.9378349184989929, 'learning_rate': 1.3224022878932318e-06, 'epoch': 4.67}
+{'loss': 0.0535, 'grad_norm': 1.0609732866287231, 'learning_rate': 1.246139180171592e-06, 'epoch': 4.69}
+{'loss': 0.0571, 'grad_norm': 1.307552456855774, 'learning_rate': 1.1698760724499524e-06, 'epoch': 4.71}
+{'eval_loss': 0.260492742061615, 'eval_runtime': 30.0001, 'eval_samples_per_second': 629.332, 'eval_steps_per_second': 78.666, 'epoch': 4.71}
+ 98%|████████████████████████████████████████████████████████████████████████████████████████████████████████▉  | 26000/26525 [2:09:31<02:16,  3.85it/s]C:\Users\USER\Desktop\Personal\code\mbti-translator\model\mbti_env\Lib\site-packages\transformers\tokenization_utils_base.py:3980: UserWarning: `as_target_tokenizer` is deprecated and will be removed in v5 of Transformers. You can tokenize your labels by using the argument `text_target` of the regular `__call__` method (either in the same call as your input texts if you use the same keyword arguments, or in a separate call.
+{'loss': 0.056, 'grad_norm': 0.7030540704727173, 'learning_rate': 1.0936129647283128e-06, 'epoch': 4.73}
+{'loss': 0.0585, 'grad_norm': 1.6345561742782593, 'learning_rate': 1.017349857006673e-06, 'epoch': 4.75}
+{'loss': 0.0565, 'grad_norm': 1.1046183109283447, 'learning_rate': 9.410867492850334e-07, 'epoch': 4.77}
+{'loss': 0.0537, 'grad_norm': 0.6118887066841125, 'learning_rate': 8.648236415633938e-07, 'epoch': 4.79}
+{'loss': 0.0549, 'grad_norm': 1.434049129486084, 'learning_rate': 7.885605338417542e-07, 'epoch': 4.81}
+  warnings.warn(                                                                                                                                        
+{'eval_loss': 0.2610495388507843, 'eval_runtime': 29.409, 'eval_samples_per_second': 641.98, 'eval_steps_per_second': 80.248, 'epoch': 4.81}
+{'loss': 0.0569, 'grad_norm': 1.1772195100784302, 'learning_rate': 7.122974261201145e-07, 'epoch': 4.83}
+{'loss': 0.0508, 'grad_norm': 1.2940248250961304, 'learning_rate': 6.360343183984748e-07, 'epoch': 4.84}
+{'loss': 0.0535, 'grad_norm': 2.042210817337036, 'learning_rate': 5.597712106768351e-07, 'epoch': 4.86}
+{'loss': 0.0549, 'grad_norm': 1.2912511825561523, 'learning_rate': 4.835081029551954e-07, 'epoch': 4.88}
+{'loss': 0.0545, 'grad_norm': 2.1496822834014893, 'learning_rate': 4.0724499523355584e-07, 'epoch': 4.9}
+{'eval_loss': 0.26103609800338745, 'eval_runtime': 31.9051, 'eval_samples_per_second': 591.755, 'eval_steps_per_second': 73.969, 'epoch': 4.9}
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████| 26525/26525 [2:12:08<00:00,  3.35it/s]
+{'loss': 0.0548, 'grad_norm': 1.7531732320785522, 'learning_rate': 3.3098188751191615e-07, 'epoch': 4.92}
+{'loss': 0.0544, 'grad_norm': 0.8525319695472717, 'learning_rate': 2.5471877979027646e-07, 'epoch': 4.94}
+{'loss': 0.0564, 'grad_norm': 1.1291762590408325, 'learning_rate': 1.784556720686368e-07, 'epoch': 4.96}
+{'loss': 0.0561, 'grad_norm': 0.8111991882324219, 'learning_rate': 1.0219256434699715e-07, 'epoch': 4.98}
+{'loss': 0.0609, 'grad_norm': 1.2129710912704468, 'learning_rate': 2.5929456625357483e-08, 'epoch': 5.0}
+                                                                                                                                                        
+{'eval_loss': 0.2615380883216858, 'eval_runtime': 28.5659, 'eval_samples_per_second': 660.927, 'eval_steps_per_second': 82.616, 'epoch': 5.0}
+{'train_runtime': 7930.0064, 'train_samples_per_second': 107.036, 'train_steps_per_second': 3.345, 'train_loss': 0.20291495652607766, 'epoch': 5.0}
